@@ -1,51 +1,8 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.orangeMan.idle": {
-			"animation_length": 4,
-			"bones": {
-				"head": {
-					"scale": {
-						"0.0": {
-							"vector": [1, 1, 1]
-						},
-						"2.0": {
-							"vector": [1, 1.05, 1]
-						},
-						"4.0": {
-							"vector": [1, 1, 1]
-						}
-					}
-				},
-				"arm1": {
-					"scale": {
-						"0.0": {
-							"vector": [1, 1, 1]
-						},
-						"2.0": {
-							"vector": [1.1, 1, 1]
-						},
-						"4.0": {
-							"vector": [1, 1, 1]
-						}
-					}
-				},
-				"arm2": {
-					"scale": {
-						"0.0": {
-							"vector": [1, 1, 1]
-						},
-						"2.0": {
-							"vector": [1.1, 1, 1]
-						},
-						"4.0": {
-							"vector": [1, 1, 1]
-						}
-					}
-				}
-			}
-		},
-		"animation.orangeMan.walk": {
+		"animation.orange_man.walk": {
+			"loop": true,
 			"animation_length": 2,
 			"bones": {
 				"arm1": {
@@ -121,6 +78,51 @@
 						},
 						"2.0": {
 							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.orange_man.idle": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"head": {
+					"scale": {
+						"0.0": {
+							"vector": [1, 1, 1]
+						},
+						"2.0": {
+							"vector": [1, 1.05, 1]
+						},
+						"4.0": {
+							"vector": [1, 1, 1]
+						}
+					}
+				},
+				"arm1": {
+					"scale": {
+						"0.0": {
+							"vector": [1, 1, 1]
+						},
+						"2.0": {
+							"vector": [1.1, 1, 1]
+						},
+						"4.0": {
+							"vector": [1, 1, 1]
+						}
+					}
+				},
+				"arm2": {
+					"scale": {
+						"0.0": {
+							"vector": [1, 1, 1]
+						},
+						"2.0": {
+							"vector": [1.1, 1, 1]
+						},
+						"4.0": {
+							"vector": [1, 1, 1]
 						}
 					}
 				}
