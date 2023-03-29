@@ -1,4 +1,4 @@
-// 1.19.3	2023-03-28T21:43:53.9111174	Recipes
+// 1.19.4	2023-03-29T11:59:02.55073	Recipes
 c9b5b401496041ac713336444932a83d3948beea data/minecraft/advancements/recipes/misc/blasting_black_opal.json
 e1208fcf5047fa934f795d1f1d7bb069b3ef4092 data/minecraft/advancements/recipes/misc/smelting_black_opal.json
 3605e5c5ca6d0e25bdfd8c24e8052a6deb93d0ad data/minecraft/recipes/blasting_black_opal.json
@@ -6,4 +6,4 @@ c82e046b36073b8e487a75cf6cafcbff2db617be data/minecraft/recipes/smelting_black_o
 34b862e5904f8287d26ec290d165a5a31fc8fd45 data/tutorialmod/advancements/recipes/misc/black_opal.json
 283b260998585515f37ebcfea8a9f59ae6de59c1 data/tutorialmod/advancements/recipes/misc/black_opal_block.json
 407f92c87cb8d477c2aa3523731845c177c48357 data/tutorialmod/recipes/black_opal.json
-d948c837f122d0820c08799ce173dfd4389aa509 data/tutorialmod/recipes/black_opal_block.json
+9750e0c7fb7b404b34bd32719452f7fee026b266 data/tutorialmod/recipes/black_opal_block.json

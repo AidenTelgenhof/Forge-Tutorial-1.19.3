@@ -2,8 +2,11 @@ package net.aiden.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.aiden.tutorialmod.block.ModBlocks;
+import net.aiden.tutorialmod.entity.ModEntities;
+import net.aiden.tutorialmod.entity.client.TigerRenderer;
 import net.aiden.tutorialmod.item.ModCreativeModeTabs;
 import net.aiden.tutorialmod.item.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -29,6 +32,7 @@ public class TutorialMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -82,6 +86,12 @@ public class TutorialMod {
             event.accept(ModBlocks.STRIPPED_EBONY_LOG);
             event.accept(ModBlocks.STRIPPED_EBONY_WOOD);
             event.accept(ModBlocks.EBONY_SAPLING);
+
+            event.accept(ModItems.TIGER_SPAWN_EGG);
+        }
+
+        if(event.getTab() == CreativeModeTabs.SPAWN_EGGS) {
+            event.accept(ModItems.TIGER_SPAWN_EGG);
         }
     }
 
@@ -90,7 +100,7 @@ public class TutorialMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            EntityRenderers.register(ModEntities.TIGER.get(), TigerRenderer::new);
         }
     }
 }
