@@ -3,6 +3,7 @@ package net.aiden.tutorialmod;
 import com.mojang.logging.LogUtils;
 import net.aiden.tutorialmod.block.ModBlocks;
 import net.aiden.tutorialmod.entity.ModEntities;
+import net.aiden.tutorialmod.entity.client.OrangeManRenderer;
 import net.aiden.tutorialmod.entity.client.TigerRenderer;
 import net.aiden.tutorialmod.item.ModCreativeModeTabs;
 import net.aiden.tutorialmod.item.ModItems;
@@ -88,10 +89,12 @@ public class TutorialMod {
             event.accept(ModBlocks.EBONY_SAPLING);
 
             event.accept(ModItems.TIGER_SPAWN_EGG);
+            event.accept(ModItems.ORANGEMAN_SPAWN_EGG);
         }
 
         if(event.getTab() == CreativeModeTabs.SPAWN_EGGS) {
             event.accept(ModItems.TIGER_SPAWN_EGG);
+            event.accept(ModItems.ORANGEMAN_SPAWN_EGG);
         }
     }
 
@@ -101,6 +104,7 @@ public class TutorialMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.TIGER.get(), TigerRenderer::new);
+            EntityRenderers.register(ModEntities.ORANGE_MAN.get(), OrangeManRenderer::new);
         }
     }
 }
