@@ -18,7 +18,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLACK_OPAL.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 9)
                 .requires(ModBlocks.BLACK_OPAL_BLOCK.get())
                 .unlockedBy("has_black_opal_block", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModBlocks.BLACK_OPAL_BLOCK.get()).build()))
