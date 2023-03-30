@@ -8,7 +8,6 @@ import net.aiden.tutorialmod.entity.client.TigerRenderer;
 import net.aiden.tutorialmod.item.ModCreativeModeTabs;
 import net.aiden.tutorialmod.item.ModItems;
 import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -53,6 +52,7 @@ public class TutorialMod {
 
         if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.BLACK_OPAL_BLOCK);
+            event.accept(ModBlocks.JUMPY_BLOCK);
         }
 
         if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
@@ -74,6 +74,8 @@ public class TutorialMod {
             event.accept(ModItems.BLACK_OPAL);
             event.accept(ModItems.RAW_BLACK_OPAL);
 
+            event.accept(ModBlocks.JUMPY_BLOCK);
+
             event.accept(ModBlocks.BLACK_OPAL_BLOCK);
             event.accept(ModBlocks.BLACK_OPAL_ORE);
             event.accept(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE);
@@ -90,11 +92,17 @@ public class TutorialMod {
 
             event.accept(ModItems.TIGER_SPAWN_EGG);
             event.accept(ModItems.ORANGEMAN_SPAWN_EGG);
+
+            event.accept(ModItems.EIGHT_BALL);
         }
 
         if(event.getTab() == CreativeModeTabs.SPAWN_EGGS) {
             event.accept(ModItems.TIGER_SPAWN_EGG);
             event.accept(ModItems.ORANGEMAN_SPAWN_EGG);
+        }
+
+        if(event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.EIGHT_BALL);
         }
     }
 

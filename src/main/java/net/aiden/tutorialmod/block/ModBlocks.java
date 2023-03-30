@@ -1,6 +1,7 @@
 package net.aiden.tutorialmod.block;
 
 import net.aiden.tutorialmod.TutorialMod;
+import net.aiden.tutorialmod.block.custom.JumpyBlock;
 import net.aiden.tutorialmod.block.custom.ModFlammableRotatedPillarBlock;
 import net.aiden.tutorialmod.item.ModItems;
 import net.aiden.tutorialmod.worldgen.tree.EbonyTreeGrower;
@@ -40,6 +41,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> ENDSTONE_BLACK_OPAL_ORE = registerBlock("endstone_black_opal_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(9f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));
+
+    public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
+            () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> EBONY_LOG = registerBlock("ebony_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)

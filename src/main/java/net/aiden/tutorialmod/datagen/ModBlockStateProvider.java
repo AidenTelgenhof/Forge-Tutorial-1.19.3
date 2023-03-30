@@ -23,6 +23,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE);
         blockWithItem(ModBlocks.ENDSTONE_BLACK_OPAL_ORE);
         blockWithItem(ModBlocks.NETHERRACK_BLACK_OPAL_ORE);
+
+        blockWithItem(ModBlocks.JUMPY_BLOCK);
         
         logBlock(((RotatedPillarBlock) ModBlocks.EBONY_LOG.get()));
         axisBlock((RotatedPillarBlock) ModBlocks.EBONY_WOOD.get(), blockTexture(ModBlocks.EBONY_LOG.get()), blockTexture(ModBlocks.EBONY_LOG.get()));

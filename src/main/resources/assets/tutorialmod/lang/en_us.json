@@ -3,12 +3,15 @@
   "item.tutorialmod.raw_black_opal": "Raw Black Opal",
   "item.tutorialmod.tiger_spawn_egg": "Tiger Spawn Egg",
   "item.tutorialmod.orangeman_spawn_egg": "Orange Man Spawn Egg",
+  "item.tutorialmod.eight_ball": "Magic Eight Ball",
 
   "block.tutorialmod.black_opal_block": "Block of Black Opal",
   "block.tutorialmod.black_opal_ore": "Black Opal Ore",
   "block.tutorialmod.deepslate_black_opal_ore": "Deepslate Black Opal Ore",
   "block.tutorialmod.netherrack_black_opal_ore": "Netherrack Black Opal Ore",
   "block.tutorialmod.endstone_black_opal_ore": "Endstone Black Opal Ore",
+
+  "block.tutorialmod.jumpy_block": "Jumpy Block",
 
   "creativemodetab.tutorial_tab": "Tutorial Tab",
 
