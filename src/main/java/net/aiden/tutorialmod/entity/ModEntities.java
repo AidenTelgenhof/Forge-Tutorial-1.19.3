@@ -24,7 +24,7 @@ public class ModEntities {
     public static final RegistryObject<EntityType<OrangeManEntity>> ORANGE_MAN =
             ENTITY_TYPES.register("orange_man",
                     () -> EntityType.Builder.of(OrangeManEntity::new, MobCategory.CREATURE)
-                            .sized(1.0f, 1.0f)
+                            .sized(0.5f, 0.5f)
                             .build(new ResourceLocation(TutorialMod.MOD_ID, "orange_man").toString()));
 
     public static void register (IEventBus eventBus) {

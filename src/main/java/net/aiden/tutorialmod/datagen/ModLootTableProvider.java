@@ -1,6 +1,5 @@
 package net.aiden.tutorialmod.datagen;
 
-import net.aiden.tutorialmod.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
